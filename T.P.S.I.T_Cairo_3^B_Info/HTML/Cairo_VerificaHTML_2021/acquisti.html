@@ -1,0 +1,77 @@
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+   <head>
+        <meta charset="UTF-8" />
+        <title> Amazon </title>
+   </head>
+   <body>
+			
+      <h1 align= "center" >Inserisci i dati relativi alla spedizione</h1>
+	
+	<table align="center">
+	<tr>
+		<th>
+			<label>Luogo di Spedizione: </label>
+		</th>
+		
+		<td>
+			<form>
+				<input  type="radio" name="chkOpz" value="si"/>Domicilio</br>
+				<input  type="radio" name="chkOpz" value="si"/>Ufficio Postale
+			</form>
+		</td>
+	</tr>	
+		
+	<tr>
+		<th>
+			<form>
+				<label>Opzioni aggiuntive: </label>
+			</form>
+		</th>
+		
+		<td>
+			<form>
+				<input  type="checkbox" name="chkOpz1" value="si"/>Domicilio</br>
+				<input  type="checkbox" name="chkOpz2" value="si"/>Ufficio Postale
+			</form>
+		</td>
+	</tr>	
+	
+	<tr>
+		<th>
+			<label> Tipo di pagamento: </label>
+		</th>
+		<th>
+			
+			<select name="lstPagamento">
+				<option> Visa </option>
+				<option> Mastercard </option>
+				<option> American Express </option>
+		</th>
+	</tr>
+	
+	<tr>
+		<th>
+			<label> Note: </label>
+		</th>
+		
+		<th>
+			<textarea name="note" maxlength="500" cols="20" rows="7"> </textarea>
+		</th>
+	
+	</tr>
+	
+	<tr>
+		<th>
+				<form action=”conferma.html” target="_blank	">
+					<input type="submit"/>
+				</form>
+		</th>
+	</tr>
+
+
+
+	 </table>
+   </body>
+   
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+   <head>
+        <meta charset="UTF-8" />
+        <title> es11 </title>
+   </head>
+   <body>
+      <h1 align= "center" > Pagina di Registrazione	 </h1>
+
+	  <form action="pagina2.html"> 
+	  	<table>  
+	  	<tr>
+			<th>
+				<label for="txtCognome">	Cognome:			</label>		
+				<input type="text" id="txtCognome" name="txtCognome" maxlength="12" size="46" required autocomplete="off"/> 
+			</th>
+		</tr>	
+		
+			<br/>	<br/>
+		
+		<tr>
+			<th colspan="1" width="50%">
+				<label for="txtNome">	Nome:			</label>	
+				<input type="text" id="txtNome" name="txtNome"maxlength="12" size="50" required autocomplete="off" /> 
+			</th>
+		</tr>
+		
+	  	<br/>	<br/>
+		
+		<tr>
+			<th colspan="1" width="50%">
+				<label for="txtEta">	Data di Nascita:			</label>
+				<input type="text" id="txtEta"   name="txtEtà" maxlength="2" min="18" max="10" size="10" required autocomplete="off" />
+				<input type="text" id="txtEta"   name="txtEtà" maxlength="2" min="18" max="10" size="10" required autocomplete="off" />
+				<input type="text" id="txtEta"   name="txtEtà" maxlength="4" min="18" max="10" size="10" required autocomplete="off" />
+			</th>
+		</tr>
+	  
+	  	<br/>	<br/>
+	  	<label for="optITIS" id="chkSport">	Genere:			</label>
+		<span>M</span><input type="radio" name="optGenere"	 required autocomplete="off" />
+		<span>F</span><input type="radio" name="optGenere" required autocomplete="off" />
+	  
+	  	<br/>	<br/>
+	  
+	  		
+		<label for="lstProvincia"> Provincia di residenza </label>
+		<select id="lstProvincia" >
+			<option> CN </option>
+			<option> AT </option>
+			<option> TO </option>
+			<option> AL </option>
+
+  		<br/><br/>  		<br/><br/>
+	  
+		
+		<p> Secondo quali modalità si desidera ricevere maggiori informazioni? </p>
+		
+		
+		
+		<label for="chkSport" id="chkSport">	Posta Ordinaria			</label>
+		<input type="checkbox" id="chkSport"/>		
+		<br/>
+		
+		<p> (sono ammesse <br/> scelte multiple)		</p>
+		
+		<label for="chkCinema" >	Posta Elettronica			</label>
+		<input type="checkbox" />
+		<br/>
+		<label for="chkInformatica" >	Telefono	</label>
+		<input type="checkbox"/> <!-- ????????? da sistemare -->
+		
+		<br/><br/>
+		
+		<label for="txtCommenti"> Nota (specificare eventuali richieste particolari)	</label>
+		<br/>
+		<textarea id="txtCommenti" placeholder="inserisci qua i tuoi commenti" rows="10" cols="40" autocomplete="off"></textarea>
+		
+		<br/><br/>	
+		<input type="submit" value="invia"> </input>
+		
+	  </table>
+	  
+	  </form>
+	  
+   </body>
+   
+</html>

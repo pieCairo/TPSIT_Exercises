@@ -1,0 +1,73 @@
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+   <head>
+        <meta charset="UTF-8" />
+        <title> Modello </title>
+   </head>
+   <body>
+      <h1 align= "center" > Questo è il modello </h1>
+	  <table border="1">
+         <tr>
+            <th rowspan="2" colspan="1" width="10%"> Roberto Benigni </th>
+            <th colspan="6"> Altri film </th>
+        </tr>
+        <tr>
+            <th colspan="2"> Titolo </th>
+            <th colspan="4"> Descrizione </th>
+        </tr>
+        <tr>
+            <td> 1988 </td>
+            <td colspan="2"> <b> Il piccolo diavolo </b> </td>
+            <td colspan="4"> Padre Maurizio viene chiamato a compiere un esorcismo per liberare una donna dall'essere che la stava possedendo. </td>
+        </tr>
+        <tr>
+            <td> 1994 </td>
+            <td colspan="2"> <b> Il mostro </b> </td>
+            <td colspan="4"> 
+                Loris è un giovane disoccupato che si guadagna da vivere con lavori saltuari. 
+                Una serie di equivoci porta la polizia a sospettare che Loris sia il maniaco sessuale e serial killer di donne che terrorizza il quartiere. 
+            </td>
+        </tr>
+        <tr>
+            <td> 2005 </td>
+            <td colspan="2"> <b> La tigre e la neve </b> </td>
+            <td colspan="4"> 
+                Attilio de Giovanni, svagato ed estroso professore di poesia, divorziato e padre di due preadolescenti, 
+                è innamorato perdutamente di Vittoria, una scrittrice che gli appare in sogno tutte le notti. 
+            </td>
+        </tr>
+	  
+	  </table>
+   <br/>
+	<form>
+		<label for="txtDomanda">	Quale tra i seguenti film ti è piaciuto di più:			</label>
+		<input type="text" id="txtDomanda" placeholder="Inserisci il titolo del tuo film preferito tra i precedenti" maxlength="20" size="44" required autocomplete="off" />
+
+    <br/>
+		<p> L'hai mai visto al cinema: </p>
+	  	<label for="optSi" >	Si	</label>
+		<input type="radio" name="optScuola" required autocomplete="off" />
+		<br/>
+		<label for="optNo" >	No	</label>
+		<input type="radio" name="optScuola" required autocomplete="off" />
+		
+	<br/><br/><br/>
+		<label for="chkSport" id="chkVisioni">	L'hai visto più volte:			</label>
+		<input type="checkbox" id="chkVIsioni" required autocomplete="off" />
+	
+	<br/>		
+	  	<label for="txtVoto">	Assegna un voto da 1-10:			</label>
+		<input type="number" id="txtVoto" maxlength="2" min="1" max="10" size="47" required autocomplete="off" />	
+		
+
+		<input type="reset" value="reset"> </input>
+		<input type="submit" value="invia"> </input>  
+
+		<a href="index.html"> <img src="ritorna.gif">	</a>
+   
+   </form>
+   
+   
+   </body>
+   
+</html>
