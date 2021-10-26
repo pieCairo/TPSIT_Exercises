@@ -1,0 +1,17 @@
+#wrapper{
+	border:1px solid;
+	padding:20px;
+	margin:20px, auto;
+	background-color:rgb(180, 255, 180);
+	width:300px;
+	display: grid;
+	grid-template-columns: 120px auto;
+	grid-template-rows: 25px 25px 25px 25px;
+	grid-column-gap:8px;
+	grid-row-gap:5px;
+}
+
+#wrapper label{
+	text-align:right;
+	
+}

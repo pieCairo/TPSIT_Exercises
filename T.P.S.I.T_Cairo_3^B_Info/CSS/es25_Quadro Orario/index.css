@@ -1,0 +1,61 @@
+*{
+	padding:;
+	margin:0;
+}
+
+th{
+	background-color:#BBB;
+	padding:10px;
+}
+.italiano{
+	background-color:#AAF;
+	
+}
+.sistemi{
+	
+	background-color:#AFA;
+}
+.tele{
+	
+	background-color:#FAA;
+}
+.ginnastica{
+	
+	background-color:#FFA;	
+}
+.tpsi{
+	background-color:#FAF
+}
+.dio{
+	background-color:#AFF;	
+}
+
+.info{
+	background-color:#F00;
+}
+.mate{
+	background-color:#0F0;
+}
+
+.inglese{
+	background-color:#00F;
+}
+.storia{
+	background-color:#496	;
+}
+
+
+
+
+
+.vuoto{
+	background-color:#EEE;	
+}
+
+
+td:hover{
+	background-color:#00F;
+	color:#FFF;
+	cursor:pointer;
+	text-decoration:underline;
+}
