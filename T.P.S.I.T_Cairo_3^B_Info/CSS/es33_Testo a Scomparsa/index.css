@@ -1,0 +1,42 @@
+*{
+	padding:0;
+	margin:0;
+}
+h1{
+	text-align: center;
+}
+
+#wrapper{
+	width:400px;
+	height:300px;
+	border:1px solid black;
+	background-image: url(koala.jpg);
+	margin:35px auto;
+	background-size:cover;
+	position:relative;
+
+
+}
+
+#wrapper > p{
+	font-size: 10pt;
+	text-align:center;
+	color:rgba(255,255,255,0);
+	position: absolute;
+	bottom:0;
+	left:0;
+	font-size:12pt;
+	width:380px;
+	padding:10px;
+	background-color:rgba(0,0,0,0)
+}
+
+#wrapper:hover >p {
+	color:rgba(255,255,255,0.5);
+	background-color:rgba(0,0,0,0.5);
+	text-decoration: underline;
+}
+
+#wrapper >p:hover {
+	cursor:pointer;
+}
