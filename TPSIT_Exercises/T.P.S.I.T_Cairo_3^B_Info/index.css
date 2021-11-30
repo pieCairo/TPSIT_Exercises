@@ -6,3 +6,7 @@ h1{
 	text-align: center;
 	margin:15px;
 }
+
+html, body, #wrapper{
+	height:100%;
+}
