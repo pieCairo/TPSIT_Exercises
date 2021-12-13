@@ -16,7 +16,7 @@ body{
     background-color: rgb(234,234,234);
 }
 #wrapper{
-    width: 772px;
+    max-width: 772px;
     padding:1px 4px;
     margin:0 auto;
 }
@@ -29,6 +29,7 @@ body{
     background-position:center;
     margin-bottom:10px;
     color: #505050;
+    background-size: contain;
 }
 
 #topFrame h1{
@@ -48,7 +49,7 @@ body{
 
 /**************************************************************/
 #leftFrame{
-    width:143px;
+    max-width:143px;
     float:left;
 	padding-left:7px;
 }
@@ -130,7 +131,7 @@ li:hover{
 #mainFrame{
     margin: 10px 10px 10px 160px;
     line-height:19px;
-	width:476px;
+	max-width:476px;
 }
 #mainFrame h1{
     margin:0 0 10px 10px;
@@ -147,7 +148,7 @@ li:hover{
 
 /**************************************************************/
 #rightFrame{
-    width:130px;
+    max-width:130px;
 	padding-right:6px;
     float:right;
 	font-size:8pt;
@@ -196,3 +197,29 @@ li:hover{
 
 
 
+@media screen and (max-device-width:700px) {
+    #leftFrame{
+        display: none;
+    }
+
+    #rightFrame{
+        display: none;
+    }
+    #mainFrame{
+        margin-left:10px;
+        max-width: none;
+        background-color:#FFE;
+    }
+    #topFrame{
+        height:0%;
+        padding-bottom:35%;
+    }
+    #leftFrame .menu2, #leftFrame.latestNews{
+        display:none;
+    }
+
+    #leftFrame .menu1 li{
+        display:inline-block;
+    }
+
+}
