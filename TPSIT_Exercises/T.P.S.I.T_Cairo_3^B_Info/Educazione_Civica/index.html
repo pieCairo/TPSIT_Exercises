@@ -1,0 +1,160 @@
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+   <head>
+        <meta charset="UTF-8" />
+        <title> Educazione Civica, Cairo Pietro </title>
+		<link  rel="stylesheet" href="index.css">
+   </head>
+   <body>
+      <h1 align= "center" > Questionario sull'utilizzo delle risorse digitali </h1>
+   <form id="consegna" action="pagina2.html">   
+      <div id="wrapper">     
+         <fieldset>
+            <legend> Informazioni personali</legend>
+            <p>In questo questionario, completamente anonimo, ti verranno richieste delle informazioni riguardando la tua esperienza con le esperienze digitali.</br> Ti ringraziamo dal principio per la partecipazione.</p>
+            <label for="txtEta">	Età:			</label>
+            <input type="number" id="txtEta" placeholder="Scrivi la tua età: "  name="txtEtà" maxlength="2" min="18" max="50" size="47" required autocomplete="off" /> </br>        
+            <label for="txtHome">Sesso: </label>
+            <input type="text" list="listHome" name="txtHome" id="txtHome"  required> 
+            <datalist id="listHome">
+               <option>Maschio</option>
+               <option>Femmina</option>
+               <option>Non-Binario</option>
+            </datalist> <br>
+            <label for="txtResidenza">Residenza: </label>
+            <input type="text" list="listResidenza" name="txtResidenza" id="txtResidenza"  required> 
+            <datalist id="listResidenza">
+               <option>Nord</option>
+               <option>Centro</option>
+               <option>Sud</option>
+               <option>Non in Italia</option>
+            </datalist>
+         </fieldset>
+         <hr>  <br>
+         <div class="spazio">
+         <label for="txtKnowledge">Quante ore spendi mediamente al giorno su internet: </label> <br>
+         <span>0</span>
+         <input type="range" name="txtKnowledge" min="0" max="24" step="1"  required>
+         <span>24</span>
+         </div>
+         <br> <hr>   <br>
+
+
+         <div id="float">
+         <label for="txtKnowledge">Indica quante volte lo usi al giorno: </label> <br>
+         <span>1</span>
+         <input type="range" name="txtKnowledge" min="1" max="5" step="1"  required>
+         <span>5</span>
+         </div>
+         <div class="spazio">   <label for="txtSocial">Quale social usi di più: </label>
+         <input type="text" list="listSocial" name="txtSocial" id="txtSocial"  required> 
+         <datalist id="listSocial">
+            <option>Instagram</option>
+            <option>Whatsapp</option>
+            <option>Snapchat</option>
+            <option>Facebook</option>
+            <option>Youtube</option>
+            <option>Twitch</option>
+            <option>Altro (digita tu la risposta)</option>
+         </datalist>
+            </div>
+      <br> <hr> <br>
+
+      
+      <div id="float">
+         <label for="txtKnowledge">Indica quante volte lo usi al giorno: </label> <br>
+         <span>1</span>
+         <input type="range" name="txtKnowledge" min="1" max="10" step="1"  required>
+         <span>10</span>
+         </div>
+      <div class="spazio">   <label for="txtSocial">Quale sito visiti più spesso: </label>
+         <input type="text" list="listSocial" name="txtSocial" id="txtSocial"  required> 
+      </div>
+      <br> <hr>
+
+      <div class="spazio">
+         <div> Per quale motivo usi internet giornalmente: </div>
+			
+         <label for="optITIS" id="chkSport">	LAVORO:			</label>
+       <input type="checkbox" name="optScuola"	 id="chkSport" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <label for="optRagioneria" >	SCUOLA:			</label>
+       <input type="checkbox" name="optScuola" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <label for="optScientifico" >	PASSATEMPO:	</label>
+       <input type="checkbox" name="optScuola"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <label for="optScientifico" >	INTERESSI PERSONALI:	</label>
+       <input type="checkbox" name="optScuola"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <br> <hr>
+   
+      
+      <div class="spazio">
+         <div id="float">
+            <div> Se si, indica il problema riscontrato: </div>
+               
+            <label for="optCY">	Cyberbullismo:			</label>
+          <input type="checkbox" name="optRISC"	 id="chkCY" autocomplete="off" />
+      
+            <label for="optFURTO" >	Furto di indentità:			</label>
+          <input type="checkbox" name="optRISC" id="chkFURTO" autocomplete="off" /> <br>
+      
+          <label for="optIMMAGINI" >	Diffusione illecita di immagini:	</label>
+          <input type="checkbox" name="optRISC" id="optIMMAGINI" autocomplete="off" /> <br>
+      
+          <label for="optPEDO" >	 Pedopornografia o problemi collegati:	</label>
+          <input type="checkbox" name="optRISC" id="optPEDO" autocomplete="off" /> </div>
+
+            <div> Sei mai stato esposto a problemi dovuti all'internet: </div>
+            
+            <label for="optYES" >	Si			</label>
+          <input type="radio" id="optYES" name="optPRB" autocomplete="off" required/>
+   
+            <label for="optNO" >	No			</label>
+          <input type="radio" name="optPRB"  autocomplete="off" required/>
+      </div> <br>
+
+      <br> <br> <hr>   
+
+      <div class="spazio">
+         <div id="float">
+
+            <div> Se si, reputi sia necessario anche una limitazione <br>delle ore giornaliere disponibili sul web: </div> 
+                 
+            <label for="optYES" >	Si			</label>
+          <input type="radio" id="optYES" name="optPRB" autocomplete="off" required />
+     
+            <label for="optNO" >	No			</label> 
+          <input type="radio" name="optPRB"  autocomplete="off" required /> <br>
+          <label for="txtKnowledge">Indica il limite che imporresti: </label> <br>
+          <span>1</span>
+          <input type="range" name="txtKnowledge" min="1" max="5" step="1"  required>
+          <span>5</span>
+            </div>
+
+         <div> Per i bambini, pensi sia necessario l'uso del <br> blocco parentale per la navigazione sul web? </div> 
+            
+         <label for="optYES" >	Si			</label>
+       <input type="radio" id="optYES" name="optUSO" autocomplete="off" required />
+
+         <label for="optNO" >	No			</label>
+       <input type="radio" name="optUSO"  autocomplete="off" required />
+   
+
+       <br> <br> <br> <br> <br> <hr>   
+
+
+      </div>
+      
+
+
+
+
+      <input id="submit" type="submit" value="Clicca qui per inviare le risposte del sondaggio">  
+   </div>
+   </form>
+
+   </body>
+   
+</html>
