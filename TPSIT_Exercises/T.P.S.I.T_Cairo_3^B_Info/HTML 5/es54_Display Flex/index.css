@@ -55,4 +55,5 @@ html, body, #wrapper{
 
 #wrapper{
 	display:flex;
+	flex-wrap: wrap;
 }
